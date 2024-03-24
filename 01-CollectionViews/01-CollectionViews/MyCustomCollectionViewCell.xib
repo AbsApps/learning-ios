@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="mycell" id="gTV-IL-0wX" customClass="MyCustomCollectionViewCell" customModule="_1_CollectionViews" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="121" height="121"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="121" height="121"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5gg-vm-bNG">
+                        <rect key="frame" x="0.0" y="0.0" width="121" height="121"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWL-1W-5qn">
+                                <rect key="frame" x="16" y="16" width="89" height="49"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="square.and.arrow.up.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="yMa-Pm-1I0">
+                                <rect key="frame" x="10" y="58" width="100" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="2Mt-5M-3ZL"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="bYW-fL-7UN"/>
+                                    <constraint firstAttribute="height" constant="30" id="nVt-58-MM6"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yMa-Pm-1I0" firstAttribute="top" secondItem="PWL-1W-5qn" secondAttribute="bottom" constant="10" id="1R0-4m-leP"/>
+                            <constraint firstItem="PWL-1W-5qn" firstAttribute="top" secondItem="5gg-vm-bNG" secondAttribute="top" constant="16" id="2d0-C1-XHd"/>
+                            <constraint firstAttribute="bottom" secondItem="yMa-Pm-1I0" secondAttribute="bottom" constant="10" id="5Y3-L3-OfB"/>
+                            <constraint firstAttribute="trailing" secondItem="PWL-1W-5qn" secondAttribute="trailing" constant="16" id="OqD-EA-UyE"/>
+                            <constraint firstItem="yMa-Pm-1I0" firstAttribute="leading" secondItem="5gg-vm-bNG" secondAttribute="leading" constant="10" id="nob-Be-TLU"/>
+                            <constraint firstItem="yMa-Pm-1I0" firstAttribute="top" secondItem="PWL-1W-5qn" secondAttribute="bottom" constant="16" id="o3O-5z-yez"/>
+                            <constraint firstAttribute="trailing" secondItem="yMa-Pm-1I0" secondAttribute="trailing" constant="10" id="oYE-9K-SCZ"/>
+                            <constraint firstItem="PWL-1W-5qn" firstAttribute="leading" secondItem="5gg-vm-bNG" secondAttribute="leading" constant="16" id="pTY-Ws-CFr"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="5gg-vm-bNG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="J63-Zl-gTM"/>
+                <constraint firstAttribute="trailing" secondItem="5gg-vm-bNG" secondAttribute="trailing" id="VFj-5P-abl"/>
+                <constraint firstItem="5gg-vm-bNG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="VZT-HB-9JW"/>
+                <constraint firstAttribute="bottom" secondItem="5gg-vm-bNG" secondAttribute="bottom" id="vAz-Sf-xQf"/>
+            </constraints>
+            <size key="customSize" width="121" height="121"/>
+            <connections>
+                <outlet property="myFirstLabel" destination="PWL-1W-5qn" id="wsR-pS-F71"/>
+                <outlet property="myImage" destination="yMa-Pm-1I0" id="bxT-cT-QgR"/>
+            </connections>
+            <point key="canvasLocation" x="80.152671755725194" y="12.323943661971832"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="square.and.arrow.up.circle.fill" catalog="system" width="128" height="123"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ViewController.collectionView(_:numberOfItemsInSection:):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "myCountries.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.collectionView(_:cellForItemAt:):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "myCountries[1]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
