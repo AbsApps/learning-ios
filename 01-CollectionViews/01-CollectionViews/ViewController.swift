@@ -17,8 +17,10 @@ class ViewController: UIViewController {
     private let myCellWidth = UIScreen.main.bounds.width / 2
     
     override func viewDidLoad() {
-        super.viewDidLoad()
         
+        
+        super.viewDidLoad()
+        // test git ..
         // Accedemos al datasource y lo delegamos sobre
         // nosotros mismos
         collectionView.dataSource = self
