@@ -7,7 +7,7 @@
 
 import Foundation
 import SwiftUI
-
+    
 
 final class NotesViewModel: ObservableObject {
     @Published var notes: [NoteModel] = []
